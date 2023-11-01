@@ -12,6 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder(toBuilder = true)
 public class Store {
     @Id
     @GenericGenerator(strategy = "uuid2",name = "system-uuid")
