@@ -1,6 +1,6 @@
 package com.enima.tokonyadia.entity;
 
-import com.enima.tokonyadia.entity.contact.ERole;
+import com.enima.tokonyadia.entity.contract.ERole;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 

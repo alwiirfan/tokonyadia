@@ -1,4 +1,4 @@
-package com.enima.tokonyadia.entity.contact;
+package com.enima.tokonyadia.entity.contract;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.server.ResponseStatusException;

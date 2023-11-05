@@ -1,7 +1,7 @@
 package com.enima.tokonyadia.repository;
 
 import com.enima.tokonyadia.entity.Role;
-import com.enima.tokonyadia.entity.contact.ERole;
+import com.enima.tokonyadia.entity.contract.ERole;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

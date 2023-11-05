@@ -20,7 +20,7 @@ public class JwtUtils {
 
     // mengambil email dari token
     public String getEmailByToken(String token){
-        return Jwts.parser().setSigningKey(jwtSecret).parseClaimsJwt(token).getBody().getSubject();
+        return Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token).getBody().getSubject();
     }
 
     // membuat token
@@ -35,7 +35,7 @@ public class JwtUtils {
 
     public boolean validateJwtToken(String token){
         try {
-            Jwts.parser().setSigningKey(jwtSecret).parseClaimsJwt(token);
+            Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token);
             return true;
         }catch (MalformedJwtException e){ // apakah tokennya valid
             log.error("Invalid JWT token {}", e.getMessage());

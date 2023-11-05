@@ -1,7 +1,7 @@
 package com.enima.tokonyadia.service.impl;
 
 import com.enima.tokonyadia.entity.*;
-import com.enima.tokonyadia.entity.contact.ERole;
+import com.enima.tokonyadia.entity.contract.ERole;
 import com.enima.tokonyadia.model.request.AuthRequest;
 import com.enima.tokonyadia.model.request.RegisterSellerRequest;
 import com.enima.tokonyadia.model.response.LoginResponse;

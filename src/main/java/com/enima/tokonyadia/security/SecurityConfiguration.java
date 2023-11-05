@@ -42,7 +42,7 @@ public class SecurityConfiguration {
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and() // management session
                 .authorizeRequests() // izin akses ke semua aplikasi
                 .antMatchers("/api/v1/auth/**").permitAll() // untuk mengakses yang tidak harus login dulu
-                .antMatchers(HttpMethod.GET, "/api/v1/customers").permitAll() // untuk mengakses yang tidak harus login dulu
+                .antMatchers(HttpMethod.GET, "/api/v1/products").permitAll() // untuk mengakses yang tidak harus login dulu
                 .anyRequest().authenticated() // kalau mau akses yang lain harus login dulu
                 .and().addFilterBefore(authTokenFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();

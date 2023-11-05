@@ -1,7 +1,7 @@
 package com.enima.tokonyadia.service.impl;
 
 import com.enima.tokonyadia.entity.Role;
-import com.enima.tokonyadia.entity.contact.ERole;
+import com.enima.tokonyadia.entity.contract.ERole;
 import com.enima.tokonyadia.repository.RoleRepository;
 import com.enima.tokonyadia.service.RoleService;
 import lombok.RequiredArgsConstructor;
